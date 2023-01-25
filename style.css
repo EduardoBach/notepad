@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gentium Book Basic', serif;
+
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 3px rgb(0, 0, 0) solid;
+}
+
+.txtHeader{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    border: none;
+    height: 100%;
+}
+
+.btn{
+    position: absolute;
+    width: 70px;
+    height: 140px;
+    margin-top: -45px;
+    margin-left: -25px;
+    transform: rotate(40deg);
+    background-color: red;
+}
+
+.img{
+    margin-left: 22px;
+    margin-top: -10px;
+}
+
+.txtContent{
+    width: 1400px;
+    height: 650px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+
