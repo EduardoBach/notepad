@@ -1,49 +1,49 @@
-*{
-    padding: 0;
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Gentium Book Basic', serif;
-
+    padding: 0;
 }
 
-.header{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
+
+.txtHeader {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.txtContent {
     width: 100%;
-    height: 90px;
-    border-bottom: 3px rgb(0, 0, 0) solid;
+    min-height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
 }
-
-.txtHeader{
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 50px;
-    border: none;
-    height: 100%;
-}
-
-.btn{
-    position: absolute;
-    width: 70px;
-    height: 140px;
-    margin-top: -45px;
-    margin-left: -25px;
-    transform: rotate(40deg);
-    background-color: red;
-}
-
-.img{
-    margin-left: 22px;
-    margin-top: -10px;
-}
-
-.txtContent{
-    width: 1400px;
-    height: 650px;
-    margin-left: 320px;
-    margin-top: 20px;
-    border: none;
-    text-align: center;
-    font-size: 30px;
-}
-
-
