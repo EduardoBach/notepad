@@ -1,27 +1,41 @@
-var dw = document.getElementById("dow")
+window.addEventListener('DOMContentLoaded', function() {
+    var dw = document.getElementById("dow");
+    dw.addEventListener("click", download);
+    
+    var fileName = document.getElementById("txtHeader");
+    var fileContent = document.getElementById("txtContent");
+    var feedbackMessage = document.getElementById("feedbackMessage");
 
-dw.addEventListener("click", download)
+    fileName.value = "";
+    fileContent.value = "";
 
+    function download() {
+        if (fileName.value === "" || fileContent.value === "") {
+            window.alert("Please enter file name and content.");
+        } else {
+            var content = fileContent.value;
+            var anchorElement = document.createElement("a");
+            anchorElement.download = fileName.value + ".txt";
+            var blob = new Blob([content], { type: "text/plain" });
 
-var fileName = document.getElementById("txtHeader")
-var fileContent = document.getElementById("txtContent")
+            if (window.navigator.msSaveOrOpenBlob) {
+                // For IE and Edge
+                window.navigator.msSaveOrOpenBlob(blob, anchorElement.download);
+            } else {
+                // For other browsers
+                anchorElement.href = window.URL.createObjectURL(blob);
+                anchorElement.click();
+            }
 
-fileName.value = ""
-fileContent.value = ""
+            // Exibir feedback visual
+            feedbackMessage.textContent = "Download completed successfully.";
 
-function download(){
-    if(fileName.value === "" || fileContent.value === "")
-        window.alert("Please enter file name and contend")
-        else{
-            var e = fileContent.value;
-            var c = document.createElement("a");
-            c.download = fileName.value + ".txt";
-            var t = new Blob([e],{
-                type: "text/plain"
-            });
-            c.href = window.URL.createObjectURL(t)
-            c.click();
+            // Limpar campos após o download
+            fileName.value = "";
+            fileContent.value = "";
         }
-}
+    }
+});
+
 
 
