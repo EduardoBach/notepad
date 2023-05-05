@@ -1,5 +1,6 @@
 #Notepad
 
-![notepadimg](https://user-images.githubusercontent.com/88400048/214598884-14c110d7-27c3-4f17-8fbe-727b4816654d.jpg)
+<img width="1920" alt="mynote" src="https://user-images.githubusercontent.com/88400048/236583206-2bdcf094-9885-4650-a014-2e032c3f0617.png">
 
-<p>if you want to download the text, just click on the red button </p>
+
+<p>If you want to download the file, just click on the button on the left side</p>
